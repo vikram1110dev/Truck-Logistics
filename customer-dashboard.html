@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: white;">
+    <h1 class="header">Customer Dashboard</h1>
+    
+    <div style="padding: 20px; font-family: sans-serif; font-size: 16px;">
+        <h2>Welcome, Rajesh!</h2>
+        <p>Here is your dashboard summary</p>
+        
+        <h3>Your Summary:</h3>
+        <p>Active Trips: 3</p>
+        <p>Completed Bookings: 24</p>
+        <p>Total Amount Spent: Rs. 12,450</p>
+        
+        <hr style="border: solid black 1px;">
+        
+        <h3>Recent Bookings:</h3>
+        <table style="border: solid black 1px; width: 100%; border-collapse: collapse;">
+            <tr style="border: solid black 1px;">
+                <td style="border: solid black 1px; padding: 8px;">Booking ID</td>
+                <td style="border: solid black 1px; padding: 8px;">From</td>
+                <td style="border: solid black 1px; padding: 8px;">To</td>
+                <td style="border: solid black 1px; padding: 8px;">Status</td>
+            </tr>
+            <tr style="border: solid black 1px;">
+                <td style="border: solid black 1px; padding: 8px;">BK-001</td>
+                <td style="border: solid black 1px; padding: 8px;">Delhi</td>
+                <td style="border: solid black 1px; padding: 8px;">Mumbai</td>
+                <td style="border: solid black 1px; padding: 8px;">In Transit</td>
+            </tr>
+            <tr style="border: solid black 1px;">
+                <td style="border: solid black 1px; padding: 8px;">BK-002</td>
+                <td style="border: solid black 1px; padding: 8px;">Bangalore</td>
+                <td style="border: solid black 1px; padding: 8px;">Hyderabad</td>
+                <td style="border: solid black 1px; padding: 8px;">Delivered</td>
+            </tr>
+        </table>
+        
+        <br><br>
+        <button onclick="alert('Redirecting...')" style="background-color: #8a3f06; color: white; padding: 8px 15px; border: none; cursor: pointer; border-radius: 3px;">New Booking</button>
+        <button onclick="location.href='my-bookings.html'" style="background-color: #8a3f06; color: white; padding: 8px 15px; border: none; cursor: pointer; border-radius: 3px;">My Bookings</button>
+    </div>
+
+</body>
+</html>

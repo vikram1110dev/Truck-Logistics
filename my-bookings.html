@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: white;">
+    <h1 class="header">My Bookings</h1>
+
+    <div style="padding: 20px; font-family: sans-serif; font-size: 16px;">
+        <h3>Filter:</h3>
+        <button style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px;">All</button>
+        <button style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Active</button>
+        <button style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Completed</button>
+        <button style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Cancelled</button>
+        
+        <br><br>
+        
+        <h3>Your Bookings:</h3>
+        
+        <div style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
+            <p><b>BK-2024-001547</b> - Booking Date: 18 Aug 2024</p>
+            <p>From: Delhi | To: Mumbai | Status: In Transit | Amount: Rs. 3,304</p>
+            <button onclick="location.href='booking-details.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px; border-radius: 3px;">View Details</button>
+            <button onclick="location.href='track shipment.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Track</button>
+        </div>
+        
+        <div style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
+            <p><b>BK-2024-001546</b> - Booking Date: 15 Aug 2024</p>
+            <p>From: Bangalore | To: Hyderabad | Status: Delivered | Amount: Rs. 1,800</p>
+            <button onclick="location.href='booking-details.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px; border-radius: 3px;">View Details</button>
+            <button onclick="location.href='track shipment.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Track</button>
+        </div>
+        
+        <div style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
+            <p><b>BK-2024-001545</b> - Booking Date: 10 Aug 2024</p>
+            <p>From: Chennai | To: Pune | Status: Pending | Amount: Rs. 2,150</p>
+            <button onclick="location.href='booking-details.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px; border-radius: 3px;">View Details</button>
+            <button onclick="location.href='track shipment.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Track</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: white;">
+    <h1 class="header">My Profile</h1>
+
+    <div style="padding: 20px; font-family: sans-serif; font-size: 16px;">
+        <h2>Rajesh Kumar</h2>
+        <p>Member since Aug 2024</p>
+        
+        <hr style="border: solid black 1px;">
+        
+        <h3>Personal Information:</h3>
+        <p><b>Full Name:</b> Rajesh Kumar</p>
+        <p><b>Email:</b> rajesh.kumar@email.com</p>
+        <p><b>Phone:</b> +91 98765 43210</p>
+        <p><b>Date of Birth:</b> 15 March 1990</p>
+        <button onclick="editProfile()" style="background-color: rgb(161, 77, 16); color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Edit</button>
+        
+        <hr style="border: solid black 1px;">
+        
+        <h3>Address Information:</h3>
+        <p><b>Street:</b> 123 Industrial Area</p>
+        <p><b>City:</b> Delhi</p>
+        <p><b>State:</b> Delhi</p>
+        <p><b>Postal Code:</b> 110001</p>
+        
+        <hr style="border: solid black 1px;">
+        
+        <h3>Business Information:</h3>
+        <p><b>Company Name:</b> Kumar Transport Co.</p>
+        <p><b>GST Number:</b> 27ABCDE1234F2Z5</p>
+        <p><b>Industry:</b> Logistics & Transport</p>
+        <button onclick="editBusiness()" style="background-color: rgb(161, 77, 16); color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Edit</button>
+        
+        <hr style="border: solid black 1px;">
+        
+        <h3>Account Settings:</h3>
+        <button onclick="changePassword()" style="background-color: white; border: solid black 1px; padding: 8px 12px; cursor: pointer; margin: 5px; border-radius: 3px;">Change Password</button>
+        <button onclick="enable2FA()" style="background-color: white; border: solid black 1px; padding: 8px 12px; cursor: pointer; margin: 5px; border-radius: 3px;">Enable 2FA</button>
+        <button onclick="deleteAccount()" style="background-color: white; border: solid red 1px; padding: 8px 12px; cursor: pointer; margin: 5px; border-radius: 3px;">Delete Account</button>
+        
+        <hr style="border: solid black 1px;">
+        
+        <h3>Profile Statistics:</h3>
+        <p>Total Bookings: 24</p>
+        <p>Average Rating: 4.8/5</p>
+        <p>On-Time Rate: 95%</p>
+        <p>Verified Member: Yes</p>
+    </div>
+
+    <script>
+        function editProfile() { alert("Opening profile editor..."); }
+        function editBusiness() { alert("Opening business information editor..."); }
+        function changePassword() { alert("Opening password change form..."); }
+        function enable2FA() { alert("Enabling two-factor authentication..."); }
+        function manageNotifications() { alert("Opening notification settings..."); }
+        function deleteAccount() { 
+            if(confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
+                alert("Account deleted successfully.");
+            }
+        }
+    </script>
+
+</body>
+</html>

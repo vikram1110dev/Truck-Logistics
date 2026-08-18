@@ -1,0 +1,11 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.suppressSuggestions": false,
+    "editor.inlineSuggest.triggerCommandOnProviderChange": false,
+    "github.copilot.inlineSuggest.enable": true,
+    "github.copilot.disableAI": false,
+    "liveServer.settings.port": 5502,
+    "terminal.integrated.suggest.insertTrailingSpace": true,
+    "emmet.useInlineCompletions": true,
+    "editor.inlineCompletionsAccessibilityVerbose": true
+}

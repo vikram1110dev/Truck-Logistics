@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: white;">
+    <h1 class="header">Notifications</h1>
+
+    <div style="padding: 20px; font-family: sans-serif; font-size: 16px;">
+        <h3>Filter:</h3>
+        <button style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px;">All</button>
+        <button style="background-color: white; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Bookings</button>
+        <button style="background-color: white; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Tracking</button>
+        <button style="background-color: white; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Payments</button>
+        <button style="background-color: white; border: solid black 1px; padding: 5px 10px; cursor: pointer;">System</button>
+        
+        <br><br>
+        <h3>Your Notifications:</h3>
+        
+        <div style="border: solid black 2px; padding: 10px; margin: 8px 0; border-radius: 3px;">
+            <p><b>Booking Confirmed</b> <span style="background-color: #90EE90; padding: 2px 5px; border-radius: 2px; font-size: 11px;">NEW</span></p>
+            <p>Your booking BK-2024-001547 has been confirmed. Driver Rajesh Kumar has been assigned.</p>
+            <p style="color: gray; font-size: 12px;">2 hours ago</p>
+        </div>
+        
+        <div style="border: solid black 2px; padding: 10px; margin: 8px 0; border-radius: 3px;">
+            <p><b>Shipment In Transit</b> <span style="background-color: #FFD700; padding: 2px 5px; border-radius: 2px; font-size: 11px;">NEW</span></p>
+            <p>Your shipment has left the pickup point. Current location: Ghaziabad, UP. Estimated delivery: Tomorrow 6 PM.</p>
+            <p style="color: gray; font-size: 12px;">1 hour ago</p>
+        </div>
+        
+        <div style="border: solid black 2px; padding: 10px; margin: 8px 0; border-radius: 3px;">
+            <p><b>Payment Received</b></p>
+            <p>Payment of Rs. 3,304 received successfully for booking BK-2024-001546.</p>
+            <p style="color: gray; font-size: 12px;">5 hours ago</p>
+        </div>
+        
+        <div style="border: solid black 2px; padding: 10px; margin: 8px 0; border-radius: 3px;">
+            <p><b>Shipment Delivered</b></p>
+            <p>Your shipment BK-2024-001546 has been delivered successfully on 15 Aug 2024 at 2:30 PM.</p>
+            <p style="color: gray; font-size: 12px;">3 days ago</p>
+        </div>
+        
+        <div style="border: solid black 2px; padding: 10px; margin: 8px 0; border-radius: 3px;">
+            <p><b>System Maintenance</b></p>
+            <p>System maintenance scheduled on 25 Aug 2024 from 2:00 AM to 4:00 AM.</p>
+            <p style="color: gray; font-size: 12px;">1 week ago</p>
+        </div>
+        
+        <br>
+        <button onclick="markAllAsRead()" style="background-color: white; border: solid black 1px; padding: 8px 15px; cursor: pointer; border-radius: 3px;">Mark All as Read</button>
+    </div>
+
+    <script>
+        function markAllAsRead() {
+            alert("All notifications marked as read!");
+        }
+    </script>
+
+</body>
+</html>

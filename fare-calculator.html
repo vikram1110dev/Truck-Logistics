@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid #333;
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #8a3f06;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #333;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: rgb(161, 77, 16);
+            color: white;
+            border: 2px solid #333;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #8a3f06;
+        }
+        
+        #p1 {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 2px solid #333;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fare Calculator</h1>
+
+        <label>Enter the distance in KM:</label>
+        <input id="dis" type="number" placeholder="Enter the km">
+        
+        <label for="vehicleType">Vehicle Type:</label>
+        <select id="vehicle" name="vehicleType">
+            <option value="">-- Select Vehicle Type --</option>
+            <option value="Mini Truck">Mini Truck - 2 Ton</option>
+            <option value="Light Truck">Light Truck - 5 Ton</option>
+            <option value="Medium Truck">Medium Truck - 10 Ton</option>
+            <option value="Heavy Truck">Heavy Truck - 20 Ton</option>
+            <option value="Trailer Truck">Trailer Truck - 40 Ton</option>
+        </select>
+        
+        <button onclick="calculate()">Calculate</button>
+        <p id="p1">...</p>
+    </div>
+    
+    <script>
+        function calculate(){
+            km=document.getElementById("dis").value;
+            vt=document.getElementById("vehicle").value
+
+            perkm=0;
+            if(vt==="")
+            {
+                alert("Please choose the vehicle type")
+            }
+            else if(km==""){
+                alert("Please Enter the km") 
+            }
+            else if(vt==="Mini Truck")
+            {
+                perkm=20;
+            }
+            else if(vt==="Light Truck")
+            {
+                perkm=40;
+            }
+            else if(vt==="Medium Truck")
+            {
+                perkm=80;
+            }
+            else if(vt==="Heavy Truck")
+            {
+                perkm=160;
+            }
+            else if(vt==="Trailer Truck")
+            {
+                perkm=320;
+            }
+            else{
+                document.write("error")
+            }
+            price=km*perkm;
+            document.getElementById("p1").innerHTML="Price: ₹"+price
+        }
+    </script> 
+</body>
+</html>

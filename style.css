@@ -1,0 +1,408 @@
+
+
+    
+
+#home-logo img{
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius:0% 25% 25% 0%;
+}
+#menu{
+    width: 600px;
+    position: relative;
+    top: 25px;
+    left:889px ; 
+    display: flex;
+    gap: 50px;
+    border: 4px solid white;
+    border-radius:20px 0px 0px 20px;
+    padding: 8px 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+#menu a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+
+    
+    color: rgb(161, 77, 16);
+    
+}
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    
+    background-color:#8a3f06;
+    
+}
+
+.home-vid{
+    position: relative;
+    top: 0px;
+    margin: 0%;
+    padding: 0%;
+    height: 1000px;
+    width: 1521px;
+    display: block;
+}
+
+.overtxt{
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 60px 40px;
+    background-color: #f5f5f5;
+}
+
+.service-card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.service-card h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(161, 77, 16);
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+}
+
+.service-card p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    font-size: 14px;
+     margin: 0;
+}
+
+.advantage-section{
+    background-color: #8a3f06;
+    color: white;
+    padding: 80px 60px;
+}
+
+.advantage-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-left h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 42px;
+    margin: 0 0 30px 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.advantage-left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.advantage-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.advantage-item{
+    padding-bottom: 30px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.advantage-item:last-child{
+    border-bottom: none;
+}
+
+.advantage-item h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.advantage-item p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.fleet-section{
+    background-color: #f5f5f5;
+    padding: 80px 60px;
+}
+
+.fleet-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.fleet-image{
+    width: 100%;
+}
+
+.fleet-image img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.fleet-text h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 42px;
+    margin: 0 0 30px 0;
+    font-weight: 300;
+    color: #333;
+}
+
+.fleet-text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0 0 30px 0;
+}
+
+.fleet-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #8a3f06;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.cta-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/white-truck-crossing-bridge-sunset-urban-logistics-motion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+
+
+.cta-box{
+    background-color: white;
+    padding: 60px 50px;
+    border-radius: 4px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-box h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 38px;
+    margin: 0 0 25px 0;
+    color: #333;
+    font-weight: 300;
+}
+
+.cta-box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    margin: 0 0 35px 0;
+}
+
+.cta-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#8a3f06;
+    color: white;
+    border: none;
+    padding: 18px 50px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer{
+    background-color: #f5f5f5;
+    padding: 40px 60px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-left a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-center a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.footer-right p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+}
+.header {
+    background-color: rgb(137, 71, 20);
+    margin-top: 0%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    border-bottom:2px solid #333;
+}
+.contact a{
+    text-decoration: none;
+    color: #8a3f06;
+}
+.contact{
+    text-align: center;
+    position: relative;
+    border:2px solid #333;
+    height: auto;
+    width: 600px;
+    margin-left: 450px;
+}
+#home-logo img:hover{
+     margin-top: 4px;
+    display: inline-block;
+    height: 78px;
+    width: 78px;
+    border-radius:25% 25% 25% 25%;
+    border:2px solid black;
+}
+.about-grid{
+    position: relative;
+    left: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    width: 1400px;
+    height: 150px;
+
+}
+.about-grid div{
+    
+    background-color: #ffffff;
+    border: solid 2px #8a3f06;
+    border-radius: 20px;
+}
+
+.fa-truck{
+    position: relative;
+    top: 33px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+.fa-clock{
+    position: relative;
+    top: 33px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+.fa-sack-dollar{
+    position: relative;
+    top: 33px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+.fa-id-card{
+    position: relative;
+    top: 33px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+.q pre{
+    position: relative;
+    left: 75px;
+    padding: 0%;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
