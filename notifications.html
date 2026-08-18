@@ -11,7 +11,7 @@
 
     <div style="padding: 20px; font-family: sans-serif; font-size: 16px;">
         <h3>Filter:</h3>
-        <button onclick="all()" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px;">All</button>
+        <button onclick="showAllNotifications()" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px;">All</button>
         <button onclick="fbook()" style="background-color: white; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Bookings</button>
         <button onclick="ftrack()" style="background-color: white; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Tracking</button>
         <button onclick="fpay()" style="background-color: white; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Payments</button>
@@ -58,7 +58,7 @@
         function markAllAsRead() {
             alert("All notifications marked as read!");
         }
-        function all(){
+        function showAllNotifications(){
             let book=document.getElementsByClassName("book");
             let track=document.getElementsByClassName("track");
             let pay=document.getElementsByClassName("pay");
