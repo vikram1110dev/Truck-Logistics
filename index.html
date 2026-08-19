@@ -3,117 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Truck Logistics</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./img/—Pngtree—truck trailer transportation logo vector_5051059.png">
+    <title>Sign-in and Log-in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .form-box {
+            background-color: white;
+            border: 2px solid #333;
+            padding: 25px;
+            flex: 1;
+        }
+        
+        .form-box h3 {
+            color: #8a3f06;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 2px solid #333;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: rgb(161, 77, 16);
+            color: white;
+            border: 2px solid #333;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        button:hover {
+            background-color: #8a3f06;
+        }
+        
+        p {
+            margin-top: 10px;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
-<div id="head">
-    <div id="home-logo"><img src="./img/—Pngtree—truck trailer transportation logo vector_5051059.png" alt="Truck Logo"></div>
- <nav>  
-<div id="menu" style="display: flex; align-items: center; white-space: nowrap;">
-<a  class="optionh" href="index.html">Home</a><a class="option" href="booking.html">Booking</a><a class="option" href="track shipment.html">Track</a> <a class="option" href="about.html" target="blank">About</a> <a class="option" href="contact.html" target="blank">Contact</a>
-<div style="margin-left: 15px;">
-<select class="dropdwn" onchange="if (this.value) window.location.href=this.value;">
-<option>My Space</option>
-<option value="customer-dashboard.html">Dashboard</option>
-<option value="my-bookings.html">My Bookings</option>
-<option value="my-profile.html">My Profile</option>
-<option value="notifications.html">Notifications</option>
-<option value="fare-calculator.html">Fare Calculator</option>
-</select>
-</div>
-</div></nav>
-
-
-    <pre class="overtxt">Strong Trucks,
-        Stronger Commitments.</pre>
-    <video class="home-vid" autoplay muted loop><source src="img/make_truck_static_and_moves_th.mp4" type="video/mp4">Browser not support video</video>
-    
-    <div class="services-section">
-        <div class="service-card">
-            <img src="./img/red-semi-truck-driving-highway-sunset.jpg" alt="FTL Service">
-            <h2>Full Truckload (FTL)</h2>
-            <p>Dedicated, direct transport for your high-volume shipments.</p>
+<body>
+    <div class="container">
+        <div class="form-box" id="sign">
+            <h3>Sign-up</h3>
+            <label>Create Username:</label>
+            <input type="text" placeholder="User name" id="uname">
+            <label>Email id:</label>
+            <input type="email" placeholder="E-mail id" id="eid">
+            <label>Create Password:</label>
+            <input type="password" placeholder="Password" id="pass">
+            <label>Confirm Password:</label>
+            <input type="password" placeholder="Confirm-password" id="pass1">
+            <button onclick="create()">Create Account</button>
         </div>
         
-        <div class="service-card">
-            <img src="./img/—Pngtree—an orange logistic truck with_21052117.png" alt="LTL Service">
-            <h2>Less-Than-Truckload (LTL)</h2>
-            <p>Cost-effective solutions for smaller freight, consolidated for efficiency.</p>
-        </div>
-        
-        <div class="service-card">
-            <img src="./img/white-semi-trailer-truck-port.jpg" alt="Logistics Tracking">
-            <h2>Real-Time Tracking</h2>
-            <p>Monitor your shipments with our advanced logistics dashboard.</p>
+        <div class="form-box" id="login">
+            <h3>Log-in</h3>
+            <label>Username:</label>
+            <input type="text" placeholder="Username" id="logname">
+            <label>Password:</label>
+            <input type="password" placeholder="Password" id="logpass">
+            <button onclick="login()">Log-in</button>
+            <p id="test">...</p>
         </div>
     </div>
 
-    <div class="advantage-section">
-        <div class="advantage-content">
-            <div class="advantage-left">
-                <h2>The Logistics Advantage</h2>
-                <p>Experience the difference that a commitment to operational excellence makes for your supply chain.</p>
-            </div>
-            <div class="advantage-right">
-                <div class="advantage-item">
-                    <h3>Punctual Delivery</h3>
-                    <p>We meet your deadlines, every single time, ensuring your supply chain remains uninterrupted and efficient.</p>
-                </div>
-                <div class="advantage-item">
-                    <h3>Advanced Tracking</h3>
-                    <p>Experience real-time visibility from departure to arrival with our state-of-the-art logistics technology.</p>
-                </div>
-                <div class="advantage-item">
-                    <h3>Unwavering Safety</h3>
-                    <p>Our absolute priority is the secure transit of your cargo, protected by rigorous safety standards and training.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script>
+        function create(){
+            un=document.getElementById("uname").value;
+            e=document.getElementById("eid").value;
+            p=document.getElementById("pass").value;
+            p1=document.getElementById("pass1").value;
 
-    <div class="fleet-section">
-        <div class="fleet-content">
-            <div class="fleet-image">
-                <img src="./img/red-semi-truck-driving-highway-sunset.jpg" alt="Modern Fleet">
-            </div>
-            <div class="fleet-text">
-                <h2>Modern Fleet, Maximum Efficiency</h2>
-                <p>Our state-of-the-art vehicles are equipped for performance, safety, and reduced environmental impact.</p>
-                <a href=""><button class="fleet-button">VIEW OUR SERVICES</button></a>
-            </div>
-        </div>
-    </div>
+            if(un==="")
+            {
+                alert("Please enter the user name")
+            }
+            else if(e=="")
+            {
+                alert("Please enter the email-id")
+            }
+            else if(p==="")
+            {
+                alert("Please enter the password")
+            }
+            else if(p1==="")
+            {
+                alert("Please enter the confirm password")
+            }
+            else if(p!=p1)
+            {
+                alert("confirm password is wrong")
+            }
+            else{
+                alert("Account Created Successfully")
+                localStorage.setItem("Name",un)
+                localStorage.setItem("Email-id",e)
+                localStorage.setItem("Password",p)
+            }
 
-    <div class="cta-section">
-        <div class="cta-overlay">
-            <div class="cta-box">
-                <h2>Ready to Optimize Your Logistics?</h2>
-                <p>Let's discuss how our logistics solutions can become an extension of your team.</p>
-                <a href="mailto:vikrambalamurugan11@gmail.com"><button class="cta-button" >GET A QUOTE</button></a>
-            </div>
-        </div>
-    </div>
+            document.getElementById("uname").value="";
+            document.getElementById("eid").value="";
+            document.getElementById("pass").value="";
+            document.getElementById("pass1").value="";
+        }
 
-    
+        function login(){
+            lu=document.getElementById("logname").value;
+            lp=document.getElementById("logpass").value;
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <p><strong>India,Tamil nadu</strong></p>
-                <p><strong>Palavakam,Chennai</strong></p>
-                <p><a href="mailto:vikrambalamurugan@gmail.com">vikrambalamurugan@gmail.com</a></p>
-                <p><a href="tel:123-456-7890">123-456-7890</a></p>
-            </div>
-            <div class="footer-center">
-                <a href="">Privacy Policy</a>
-                <a href="">Accessibility Statement</a>
-            </div>
-            <div class="footer-right">
-                <p>&#169;2026 by Vikram B.</p>
-            </div>
-        </div>
-    </footer>
+            username=localStorage.getItem("Name")
+            password=localStorage.getItem("Password")
 
+            if(lu===""){
+                alert("Please enter the user name")
+            }
+            else if(lp===""){
+                alert("Please enter the password")
+            }
+            else if(lu!=username)
+            {
+                alert("username or password not exist")
+            }
+            else if(lp!=password)
+            {
+                alert("username or password not exist")
+            }
+            else{
+                alert("Login successfully!")
+                window.location="./index.html"
+            }
+        }
+    </script>    
 </body>
 </html>
