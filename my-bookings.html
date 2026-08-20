@@ -5,42 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bookings</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body style="background-color: white;">
     <h1 class="header">My Bookings</h1>
 
     <div style="padding: 20px; font-family: sans-serif; font-size: 16px;">
         <h3>Filter:</h3>
-        <button style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px;">All</button>
-        <button style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Active</button>
-        <button style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Completed</button>
-        <button style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Cancelled</button>
+        <button id="all" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px;">All</button>
+        <button id="active" style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Active</button>
+        <button id="completed" style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Completed</button>
+        <button id="cancelled" style="background-color: white; color: black; border: solid black 1px; padding: 5px 10px; cursor: pointer; margin-right: 5px;">Cancelled</button>
         
         <br><br>
         
         <h3>Your Bookings:</h3>
         
-        <div style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
-            <p><b>BK-2024-001547</b> - Booking Date: 18 Aug 2024</p>
+        <div class="a" style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
+            <p><b>BK-2024-001547</b> - Booking Date: 18 Aug 2024 Booking Status:<mark>Active</mark></p>
             <p>From: Delhi | To: Mumbai | Status: In Transit | Amount: Rs. 3,304</p>
             <button onclick="location.href='booking-details.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px; border-radius: 3px;">View Details</button>
             <button onclick="location.href='track shipment.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Track</button>
         </div>
         
-        <div style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
-            <p><b>BK-2024-001546</b> - Booking Date: 15 Aug 2024</p>
+        <div class="cancel" style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
+            <p><b>BK-2024-001546</b> - Booking Date: 15 Aug 2024 Booking Status:<mark style="background-color: rgb(227, 116, 116);">Cancelled</mark></p>
             <p>From: Bangalore | To: Hyderabad | Status: Delivered | Amount: Rs. 1,800</p>
             <button onclick="location.href='booking-details.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px; border-radius: 3px;">View Details</button>
             <button onclick="location.href='track shipment.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Track</button>
         </div>
         
-        <div style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
-            <p><b>BK-2024-001545</b> - Booking Date: 10 Aug 2024</p>
+        <div class="c" style="border: solid black 2px; padding: 15px; margin: 10px 0; border-radius: 5px;">
+            <p><b>BK-2024-001545</b> - Booking Date: 10 Aug 2024 Booking Status:<mark style="background-color: rgb(116, 225, 135);">Completed</mark></p>
             <p>From: Chennai | To: Pune | Status: Pending | Amount: Rs. 2,150</p>
             <button onclick="location.href='booking-details.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; margin-right: 5px; border-radius: 3px;">View Details</button>
             <button onclick="location.href='track shipment.html'" style="background-color: #8a3f06; color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Track</button>
         </div>
     </div>
+
+    <script>
+
+         $(document).ready(function(){
+            $('#all').click(function(){
+               
+                $(".c").show();
+                $(".cancel").show();
+                $(".a").show();
+
+            });
+        });
+
+        $(document).ready(function(){
+            $('#active').click(function(){
+               
+                $(".c").hide();
+                $(".cancel").hide();
+                $(".a").show();
+
+            });
+        });
+
+         $(document).ready(function(){
+            $('#completed').click(function(){
+               
+                $(".c").show();
+                $(".cancel").hide();
+                $(".a").hide();
+
+            });
+        });
+
+         $(document).ready(function(){
+            $('#cancelled').click(function(){
+               
+                $(".c").hide();
+                $(".cancel").show();
+                $(".a").hide();
+
+            });
+        });
+        
+        </script>
 
 </body>
 </html>
