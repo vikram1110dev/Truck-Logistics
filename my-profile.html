@@ -10,14 +10,14 @@
     <h1 class="header">My Profile</h1>
 
     <div style="padding: 20px; font-family: sans-serif; font-size: 16px;">
-        <h2>Rajesh Kumar</h2>
+        <h2  class="username"></h2>
         <p>Member since Aug 2024</p>
         
         <hr style="border: solid black 1px;">
         
         <h3>Personal Information:</h3>
-        <p><b>Full Name:</b> Rajesh Kumar</p>
-        <p><b>Email:</b> rajesh.kumar@email.com</p>
+        <p><b>Full Name:</b><b class="username"></b></p>
+        <p><b>Email:</b><b id="email"></b></p>
         <p><b>Phone:</b> +91 98765 43210</p>
         <p><b>Date of Birth:</b> 15 March 1990</p>
         <button onclick="editProfile()" style="background-color: rgb(161, 77, 16); color: white; padding: 5px 10px; border: none; cursor: pointer; border-radius: 3px;">Edit</button>
@@ -65,6 +65,21 @@
                 alert("Account deleted successfully.");
             }
         }
+
+      
+
+        n=localStorage.getItem("Name");
+
+     const users=document.querySelectorAll(".username");
+        for (let i = 0; i < users.length; i++) {
+        users[i].textContent = n;}
+
+
+        e=localStorage.getItem("Email-id");
+
+        document.getElementById("email").innerHTML=e;
+
+        
     </script>
 
 </body>
